@@ -63,7 +63,7 @@ export class ColumnParser {
     }
 
     if (result['type'] === 'int' || result['type'] === 'float') {
-      result['unsigned'] = dbType.includes('unsigned');
+      result['unsigned'] = parts.input.includes('unsigned');
     }
   }
 
